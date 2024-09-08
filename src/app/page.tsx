@@ -111,7 +111,7 @@ export default function HomePage() {
           </div>
 
           {error && (
-            <Alert variant="destructive" className="mt-4">
+            <Alert variant="destructive" >
               {error}
             </Alert>
           )}
@@ -121,7 +121,6 @@ export default function HomePage() {
           {popularBooks.map((book, index) => (
             <Button
               key={index}
-              variant="outline"
               className="text-left h-auto py-2 px-4 bg-white hover:bg-gray-100 hover:translate-y-[-3px] hover:shadow-md transition-transform duration-200"
               onClick={() => setBookName(book)}
             >
