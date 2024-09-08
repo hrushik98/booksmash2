@@ -7,7 +7,7 @@ import { Alert } from './components/Alert';
 import { BookOpen, Home as HomeIcon, Library, LogOut, Bookmark, Volume2 } from 'lucide-react';
 import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
-
+const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY || '';
 export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [bookName, setBookName] = useState('');
@@ -41,7 +41,7 @@ export default function HomePage() {
         {
           headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${apiKey}`, 
           },
         }
       );
