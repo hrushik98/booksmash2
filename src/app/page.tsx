@@ -163,7 +163,7 @@ export default function HomePage() {
 
         {isSavePopupVisible && (
           <div className="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded shadow-lg">
-            Save successful! You can find your saved books in the Library section.
+            Save successful! You can find your saved books in the Library section!
           </div>
         )}
       </div>
